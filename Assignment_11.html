@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Page</title>
+
+  <!-- • body: Sets the page font to "Times New Roman" with a serif fallback, adds a 14px margin around the page, and makes the text color black.
+• h1: Styles main headings with a large size of 40px and vertical margins of 25px (top) and 27px (bottom).
+• .top-links: Sets the font size to 20px for navigation or top-level link elements.
+• .input-area: Uses Flexbox (display: flex) to align its child elements horizontally (align-items: center), adds a 7px gap between them, and leaves a 25px bottom margin.
+• .main-input: Defines a fixed width of 310px and a height of 28px for an input field, using box-sizing: border-box so padding and borders are included in those dimensions.
+• button: Sets fixed button dimensions of 40px in height and 28px in width, a 20px font size, and a clickable pointer cursor. (Note: A width of 28px makes this a very narrow, tall button, which might look unusual unless styled for a compact icon).
+• .search-area: Sets a 20px font size for the search container, and gives any <input> inside it a width of 310px, a height of 29px, and a left margin of 4px. -->
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 14px;
+            color: black;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 25px;
+            margin-bottom: 27px;
+        }
+
+        .top-links {
+            font-size: 20px;
+        }
+
+        .input-area {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-bottom: 25px;
+        }
+
+        .main-input {
+            width: 310px;
+            height: 28px;
+            box-sizing: border-box;
+        }
+
+        button {
+            height: 40px;
+            width: 28px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .search-area {
+            font-size: 20px;
+        }
+
+        .search-area input {
+            width: 310px;
+            height: 29px;
+            margin-left: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-links">
+        <a href="#main">Skip to main content</a>
+        <br>
+        <a href="#">Home</a>
+        <a href="#">Help</a>
+    </div>
+
+    <main id="main">
+        <h1>Accessible Page</h1>
+
+        <div class="input-area">
+            <input type="text" class="main-input" aria-label="Main input">
+            <button type="button" aria-label="Close">X</button>
+        </div>
+
+        <div class="search-area">
+            <label for="search">Search:</label>
+            <input type="text" id="search">
+        </div>
+    </main>
+
+</body>
+</html>

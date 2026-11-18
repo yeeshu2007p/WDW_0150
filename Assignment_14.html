@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Nested and Responsive Tables</title>
+<style>
+  table{border-collapse:collapse}th,td{border:1px solid #777;padding:8px}
+  .scroll{max-width:100%;overflow-x:auto} .inner{width:100%}
+</style>
+</head>
+<body>
+<div class="scroll">
+<table>
+  <caption>Lab Batches</caption>
+  <thead><tr><th>Day</th><th>Lab Batches</th><th>Faculty</th><th>Room</th><th>Time</th></tr></thead>
+  <tbody><tr>
+    <td>Friday</td>
+    <td>
+      <table class="inner">
+        <tr><th>Batch</th><th>System</th></tr>
+        <tr><td>A1</td><td>PC 1-20</td></tr>
+        <tr><td>A2</td><td>PC 21-40</td></tr>
+      </table>
+    </td>
+    <td>Dr. Sharma</td><td>Lab 2</td><td>2-4 PM</td>
+  </tr></tbody>
+</table>
+</div>
+</body>
+</html>

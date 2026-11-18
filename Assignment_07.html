@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Menu</title>
+<!--1. <nav> (The Main Container)
+
+• background: #333; Sets the background color of the entire navigation bar to a dark charcoal gray (#333).
+• padding: 12px; Adds 12px of inner space around all four sides of the navigation bar, preventing the links from touching the edges.
+
+2. nav ul (The List of Links)
+
+• list-style: none; Removes the default bullet points that browsers automatically add to unordered lists (<ul>).
+• display: flex; Turns the list into a Flexbox container, which places the list items (<li>) side-by-side in a horizontal row instead of stacked vertically.
+• gap: 30px; Creates a clean 30px space between each menu item without needing to add manual margins.
+• margin: 0; Removes the browser's default outer spacing around the <ul> element.
+• padding: 0; Removes the browser's default left indentation that is normally reserved for bullet points.
+• flex-wrap: wrap; Allows the navigation links to wrap onto a second line on smaller screens so they do not overflow off the page.
+
+3. nav a (The Anchor Links)
+
+• all: unset; Strips away all default browser styling from the <a> tags, such as the default blue text color and underline.
+• color: white; Sets the text color of the links to solid white so they stand out clearly against the dark background.
+• cursor: pointer; Restores the pointing-hand mouse cursor when hovering over a link, 
+since all: unset resets the cursor back to a normal text selector.
+
+4. nav a:hover (The Hover State)
+
+• color: #ddd; Changes the link text to a slightly softer light gray (#ddd) when a user hovers their mouse over it,
+ giving visual feedback that the item is interactive.-->
+
+<style>
+ nav { background:#333; padding:12px; }
+ nav ul { list-style:none; display:flex; gap:30px; margin:0; padding:0; flex-wrap:wrap; }
+ nav a { all:unset; color:white; cursor:pointer; }
+ nav a:hover { color:#ddd; }
+</style>
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
